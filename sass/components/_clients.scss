@@ -43,7 +43,7 @@
     }
   }
 
-   @media screen and (min-width: 767px) {
+   @media screen and (min-width: 767px) and (max-width:1199px) {
     margin-right: 0;
 
     flex-basis: calc((100% - 60px) / 3);
