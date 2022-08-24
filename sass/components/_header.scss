@@ -181,7 +181,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    font-size: 14px;
+
     &__item + &__item {
       margin-left: 30px;
     }
@@ -205,7 +205,9 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding: 0;
     }
-
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    }
     &:hover,
     &:focus {
       color: $accent-color;
