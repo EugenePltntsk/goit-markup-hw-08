@@ -64,107 +64,73 @@
     <main>
       <section class="section">
         <div class="container">
-
-          <ul class="filter-list list">
-            <li class="filter-list__item">
-              <div class="filter-list__box">
-                <button class="filter-list__button" type="button">Усі</button>
-              </div>
+          <ul class="list-filter list">
+            <li class="list-filter__item">
+              <button class="filter-list__button" type="button">Усі</button>
             </li>
 
-            <li class="filter-list__item">
-              <div class="filter-list__box">
-                <button class="filter-list__button" type="button">Веб-сайти</button>
-              </div>
+            <li class="list-filter__item">
+              <button class="filter-list__button" type="button">Веб-сайти</button>
             </li>
 
-            <li class="filter-list__item">
-              <div class="filter-list__box">
-                <button class="filter-list__button" type="button">Додатки</button>
-              </div>
+            <li class="list-filter__item">
+              <button class="filter-list__button" type="button">Додатки</button>
             </li>
 
-            <li class="filter-list__item">
-              <div class="filter-list__box">
-                <button class="filter-list__button" type="button">Дизайн</button>
-              </div>
+            <li class="list-filter__item">
+              <button class="filter-list__button" type="button">Дизайн</button>
             </li>
 
-            <li class="filter-list__item">
-              <div class="filter-list__box">
-                <button class="filter-list__button" type="button">Маркетинг</button>
-              </div>
+            <li class="list-filter__item">
+              <button class="filter-list__button" type="button">Маркетинг</button>
             </li>
           </ul>
 
           <ul class="project-list list">
             <li class="project-list__item project">
               <a class="project-list__link" href="">
-                <div class="project-list__actions-box">
-                  <div class="project-list__media-package">
-                    <p class="project-list__actions-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                <!-- <div class="project-list__actions-box"> -->
+                <div class="project-list__media-package">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/jpegs/technokryak-desktop-1x.jpg 1x,
+                        ./images/jpegs/technokryak-desktop-2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
 
-                    <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/technokryak-desktop-1x.jpg   1x,
-                    ./images/jpegs/technokryak-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                    <source
+                      srcset="
+                        ./images/jpegs/technockryak-tablet-1x.jpg 1x,
+                        ./images/jpegs/technockryak-tablet-2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
 
-                <source
-                  srcset="
-                    ./images/jpegs/technockryak-tablet-1x.jpg   1x,
-                    ./images/jpegs/technockryak-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                    <source
+                      srcset="
+                        ./images/jpegs/technokryak-mob-1x.jpg 1x,
+                        ./images/jpegs/technokryak-mob-2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
 
-                <source
-                  srcset="
-                    ./images/jpegs/technokryak-mob-1x.jpg   1x,
-                    ./images/jpegs/technokryak-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
-
-
-               
-
-                <img
-                  src="./images/jpegs/technokryak-mob-1x.jpg"
-                  width="100%"
-                  alt="Технокряк"
-                />
-              </picture>
-
-
-
-
-
-
-
-
-                    <!-- <img
-                      src="./images/technockryak-tablet-1x.jpg"
-                      alt="ноутбук с изображениями на экране"
-                      width="100%"
-                    /> -->
-                  </div>
-
-                  <div class="project-list__card-info">
-                    <h2 class="project-list__card-title">Технокряк</h2>
-                    <p class="project-list__card-text">Веб-сайт</p>
-                  </div>
+                    <img src="./images/jpegs/technokryak-mob-1x.jpg" width="100%" alt="Технокряк" />
+                  </picture>
+                  <p class="project-list__actions-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <!-- </div> -->
+                <div class="project-list__card-info">
+                  <h2 class="project-list__card-title">Технокряк</h2>
+                  <p class="project-list__card-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -180,59 +146,40 @@
                     </p>
 
                     <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/poster-desktop-1x.jpg   1x,
-                    ./images/jpegs/poster-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/poster-desktop-1x.jpg 1x,
+                          ./images/jpegs/poster-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/poster-tablet-1x.jpg   1x,
-                    ./images/jpegs/poster-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/poster-tablet-1x.jpg 1x,
+                          ./images/jpegs/poster-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/poster-mob-1x.jpg   1x,
-                    ./images/jpegs/poster-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/poster-mob-1x.jpg 1x,
+                          ./images/jpegs/poster-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/poster-mob-1x.jpg"
-                  width="100%"
-                  alt="Постер"
-                />
-              </picture>
-
-
-
-
-
-
-
-
-
-                    <!-- <img src="./images/poster-tablet-1x.jpg" alt="баскетбол" width="100%" /> -->
+                      <img src="./images/jpegs/poster-mob-1x.jpg" width="100%" alt="Постер" />
+                    </picture>
                   </div>
-
-                  <div class="project-list__card-info">
-                    <h2 class="project-list__card-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="project-list__card-text">Дизайн</p>
-                  </div>
+                </div>
+                <div class="project-list__card-info">
+                  <h2 class="project-list__card-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-list__card-text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -247,49 +194,36 @@
                       приватну особу.
                     </p>
 
-                     <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/seafood-desktop-1x.jpg   1x,
-                    ./images/jpegs/seafood-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/jpegs/seafood-desktop-1x.jpg 1x,
+                          ./images/jpegs/seafood-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/seafood-tablet-1x.jpg   1x,
-                    ./images/jpegs/seafood-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/seafood-tablet-1x.jpg 1x,
+                          ./images/jpegs/seafood-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/seafood-mob-1x.jpg   1x,
-                    ./images/jpegs/seafood-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/seafood-mob-1x.jpg 1x,
+                          ./images/jpegs/seafood-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/seafood-mob-1x.jpg"
-                  width="100%"
-                  alt="Ресторан"
-                />
-              </picture>
-
-
-
-
-
+                      <img src="./images/jpegs/seafood-mob-1x.jpg" width="100%" alt="Ресторан" />
+                    </picture>
 
                     <!-- <img src="./images/third-image.jpg" alt="логотив ресторана" width="370" /> -->
                   </div>
@@ -312,46 +246,36 @@
                       приватну особу.
                     </p>
 
-                        <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/prime-desktop-1x.jpg   1x,
-                    ./images/jpegs/prime-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/jpegs/prime-desktop-1x.jpg 1x,
+                          ./images/jpegs/prime-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/prime-tablet-1x.jpg   1x,
-                    ./images/jpegs/prime-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/prime-tablet-1x.jpg 1x,
+                          ./images/jpegs/prime-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/prime-mob-1x.jpg   1x,
-                    ./images/jpegs/prime-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/prime-mob-1x.jpg 1x,
+                          ./images/jpegs/prime-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/prime-mob-1x.jpg"
-                  width="100%"
-                  alt="Прайм"
-                />
-              </picture>
-
-
+                      <img src="./images/jpegs/prime-mob-1x.jpg" width="100%" alt="Прайм" />
+                    </picture>
 
                     <!-- <img src="./images/fourth-image.jpg" alt="наушники" width="370" /> -->
                   </div>
@@ -373,50 +297,36 @@
                       приватну особу.
                     </p>
 
-                           <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/boxes-desktop-1x.jpg   1x,
-                    ./images/jpegs/boxes-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/jpegs/boxes-desktop-1x.jpg 1x,
+                          ./images/jpegs/boxes-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/boxes-tablet-1x.jpg   1x,
-                    ./images/jpegs/boxes-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/boxes-tablet-1x.jpg 1x,
+                          ./images/jpegs/boxes-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/boxes-mob-1x.jpg   1x,
-                    ./images/jpegs/boxes-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/boxes-mob-1x.jpg 1x,
+                          ./images/jpegs/boxes-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/boxes-mob-1x.jpg"
-                  width="100%"
-                  alt="<Коробки>"
-                />
-              </picture>
-
-
-
-
-
-
+                      <img src="./images/jpegs/boxes-mob-1x.jpg" width="100%" alt="<Коробки>" />
+                    </picture>
 
                     <!-- <img src="./images/fifth-image.jpg" alt="две коробки" width="370" /> -->
                   </div>
@@ -438,50 +348,36 @@
                       приватну особу.
                     </p>
 
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/jpegs/inspiration-desktop-1x.jpg 1x,
+                          ./images/jpegs/inspiration-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                               <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/inspiration-desktop-1x.jpg   1x,
-                    ./images/jpegs/inspiration-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/inspiration-tablet-1x.jpg 1x,
+                          ./images/jpegs/inspiration-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/inspiration-tablet-1x.jpg   1x,
-                    ./images/jpegs/inspiration-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/inspiration-mob-1x.jpg 1x,
+                          ./images/jpegs/inspiration-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/inspiration-mob-1x.jpg   1x,
-                    ./images/jpegs/inspiration-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
-
-
-               
-
-                <img
-                  src="./images/jpegs/inspiration-mob-1x.jpg"
-                  width="100%"
-                  alt="<Комп>"
-                />
-              </picture>
-
-
-
-
-
+                      <img src="./images/jpegs/inspiration-mob-1x.jpg" width="100%" alt="<Комп>" />
+                    </picture>
 
                     <!-- <img src="./images/sixth-image.jpg" alt="экран компьютера" width="370" /> -->
                   </div>
@@ -504,47 +400,35 @@
                     </p>
 
                     <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/edition-desktop-1x.jpg   1x,
-                    ./images/jpegs/edition-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/edition-desktop-1x.jpg 1x,
+                          ./images/jpegs/edition-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/edition-tablet-1x.jpg   1x,
-                    ./images/jpegs/edition-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/edition-tablet-1x.jpg 1x,
+                          ./images/jpegs/edition-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/edition-mob-1x.jpg   1x,
-                    ./images/jpegs/edition-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/edition-mob-1x.jpg 1x,
+                          ./images/jpegs/edition-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/edition-mob-1x.jpg"
-                  width="100%"
-                  alt="<Журнал>"
-                />
-              </picture>
-
-
-
-
+                      <img src="./images/jpegs/edition-mob-1x.jpg" width="100%" alt="<Журнал>" />
+                    </picture>
 
                     <!-- <img
                       src="./images/seventh-image.jpg"
@@ -571,47 +455,32 @@
                     </p>
 
                     <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/lab-desktop-1x.jpg   1x,
-                    ./images/jpegs/lab-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/lab-desktop-1x.jpg 1x,
+                          ./images/jpegs/lab-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/lab-tablet-1x.jpg   1x,
-                    ./images/jpegs/lab-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/lab-tablet-1x.jpg 1x,
+                          ./images/jpegs/lab-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/lab-mob-1x.jpg   1x,
-                    ./images/jpegs/lab-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="./images/jpegs/lab-mob-1x.jpg 1x, ./images/jpegs/lab-mob-2x.jpg 2x"
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/lab-desktop-1x.jpg"
-                  width="100%"
-                  alt="<Бирка>"
-                />
-              </picture>
-
-
-
-
+                      <img src="./images/jpegs/lab-desktop-1x.jpg" width="100%" alt="<Бирка>" />
+                    </picture>
 
                     <!-- <img
                       src="./images/eighth-image.jpg"
@@ -638,46 +507,35 @@
                     </p>
 
                     <picture>
-                
-                <source
-                  srcset="
-                    ./images/jpegs/growing-desktop-1x.jpg   1x,
-                    ./images/jpegs/growing-desktop-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/growing-desktop-1x.jpg 1x,
+                          ./images/jpegs/growing-desktop-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/growing-tablet-1x.jpg   1x,
-                    ./images/jpegs/growing-tablet-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/growing-tablet-1x.jpg 1x,
+                          ./images/jpegs/growing-tablet-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
 
-                <source
-                  srcset="
-                    ./images/jpegs/growing-mob-1x.jpg   1x,
-                    ./images/jpegs/growing-mob-2x.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
+                      <source
+                        srcset="
+                          ./images/jpegs/growing-mob-1x.jpg 1x,
+                          ./images/jpegs/growing-mob-2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 767px)"
+                      />
 
-
-               
-
-                <img
-                  src="./images/jpegs/growing-mob-1x.jpg"
-                  width="100%"
-                  alt="<Ноутбук>"
-                />
-              </picture>
-
-
-
+                      <img src="./images/jpegs/growing-mob-1x.jpg" width="100%" alt="<Ноутбук>" />
+                    </picture>
 
                     <!-- <img
                       src="./images/ninth-image.jpg"
