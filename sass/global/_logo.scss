@@ -1,0 +1,14 @@
+.logo {
+  @extend %font_logo;
+  color: $accent-color;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+}
+
+.logo--header {
+  color: $title-text-color;
+}
+
+.logo--footer {
+  color: $white-text;
+}

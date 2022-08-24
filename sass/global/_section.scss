@@ -1,0 +1,27 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--short-bottom {
+    padding-bottom: 60px;
+
+    @media screen and(min-width:1200px) {
+      padding-bottom: 47px;
+    }
+  }
+
+  &--short-top {
+    padding-top: 60px;
+    display: none;
+
+    @media screen and(min-width:1200px) {
+      padding-top: 47px;
+      display: block;
+    }
+  }
+}

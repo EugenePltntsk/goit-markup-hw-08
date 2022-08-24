@@ -1,0 +1,29 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196F3;
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #2F303A;
+$white-text: #ffffff;
+$button-filters-bg: #F5F4FA;
+$footer-contacts-color: rgba(255, 255, 255, 0.6);
+$hero-background-color: #C4C4C4;
+$footer-social-bg: rgba(255, 255, 255, 0.1);
+$icon-gray-color: #AFB1B8;
+
+
+%font_logo {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}
+
+
+%font_nav {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}

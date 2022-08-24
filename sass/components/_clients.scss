@@ -1,0 +1,73 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    
+  height: 92px;
+  width: 100%;
+  
+  border: 1px solid $icon-gray-color;
+  border-radius: 4px;
+  color: $icon-gray-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__icon {
+  display: block;
+  fill: currentColor;
+}
+
+.clients__item {
+  
+  &:hover .clients__link {
+  border-color: $accent-color;
+  color: $accent-color;
+  }
+
+  @media screen  and (max-width: 766px){
+    &:nth-child(-n +4){
+    margin-bottom: 30px;
+    }
+    flex-basis: calc(( 100% - 30px ) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+
+    }
+  }
+
+   @media screen and (min-width: 767px) {
+    margin-right: 0;
+
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n +3){
+    margin-bottom: 30px;
+    }
+    }
+
+    @media screen and (min-width: 1200px) {
+    
+    flex-basis: calc((100% - 150px) / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  }
+
+ .clients__link {
+  &:focus {
+  outline-color: $accent-color;
+  color: $accent-color;
+  }
+}
