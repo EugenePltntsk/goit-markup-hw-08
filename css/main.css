@@ -279,6 +279,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
+    font-size: 14px;
   }
   .contacts__item + .contacts__item {
     margin-left: 30px;
@@ -290,7 +291,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;

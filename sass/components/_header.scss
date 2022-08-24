@@ -181,6 +181,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    font-size: 14px;
     &__item + &__item {
       margin-left: 30px;
     }
@@ -194,7 +195,7 @@
     padding-bottom: 32px;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $primary-text-color;
